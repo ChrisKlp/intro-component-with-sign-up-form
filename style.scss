@@ -128,8 +128,9 @@ body {
 
     &__submit-btn {
         margin-bottom: 1rem;
-        padding: 2rem;
+        padding: 1.8rem;
         width: 100%;
+        font-family: inherit;
         font-size: 1.5rem;
         text-transform: uppercase;
         font-weight: 600;
@@ -161,13 +162,13 @@ body {
         color: $color-grayish-blue;
 
         a {
-        color: $color-red;
-        font-weight: 700;
-        text-decoration: none;
+            color: $color-red;
+            font-weight: 700;
+            text-decoration: none;
 
-        &:hover {
-            text-decoration: underline;
-        }
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -183,7 +184,7 @@ body {
             color: $color-red;
         }
 
-        &:focus{
+        &:focus {
             border: 2px solid $color-red;
         }
     }
@@ -198,7 +199,7 @@ body {
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
     .wrapper {
         display: flex;
         padding: 2rem;

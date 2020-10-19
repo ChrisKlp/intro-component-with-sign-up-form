@@ -138,8 +138,9 @@ body {
 
 .form__submit-btn {
   margin-bottom: 1rem;
-  padding: 2rem;
+  padding: 1.8rem;
   width: 100%;
+  font-family: inherit;
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 600;
