@@ -1,0 +1,251 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  min-height: 100vh;
+  padding: 9rem 2rem 2rem;
+  background: #ff7a7a url("../images/bg-intro-mobile.png");
+}
+
+.intro {
+  margin: auto;
+  max-width: 65rem;
+}
+
+.intro__header {
+  margin-bottom: 6.5rem;
+  color: white;
+  text-align: center;
+}
+
+.intro__heading {
+  margin-bottom: 2.4rem;
+  font-size: 2.8rem;
+  line-height: 135%;
+}
+
+.intro__text {
+  letter-spacing: 0.05rem;
+}
+
+.form__header {
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: #6055a5;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0.7rem 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.7rem 0 rgba(0, 0, 0, 0.15);
+}
+
+.form__heading {
+  margin: auto;
+  padding: 0 4rem;
+  color: white;
+  font-weight: 400;
+}
+
+.form__heading span {
+  font-weight: 600;
+}
+
+.form__content {
+  padding: 2.4rem;
+  background: white;
+  border-radius: 1rem;
+}
+
+.form__field {
+  position: relative;
+}
+
+.form__field input {
+  margin-bottom: 1.6rem;
+  padding: 1.8rem;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #3e3c49;
+  border-radius: 0.6rem;
+  border: 1px solid rgba(185, 182, 211, 0.5);
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+}
+
+.form__field input::-webkit-input-placeholder {
+  color: rgba(62, 60, 73, 0.7);
+}
+
+.form__field input:-ms-input-placeholder {
+  color: rgba(62, 60, 73, 0.7);
+}
+
+.form__field input::-ms-input-placeholder {
+  color: rgba(62, 60, 73, 0.7);
+}
+
+.form__field input::placeholder {
+  color: rgba(62, 60, 73, 0.7);
+}
+
+.form__field input:focus {
+  outline: none;
+  border: 1px solid #6055a5;
+}
+
+.form__error-icon {
+  position: absolute;
+  top: 1.8rem;
+  right: 2.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url("../images/icon-error.svg") no-repeat;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.form__info {
+  margin-bottom: 0rem;
+  height: 0;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 500;
+  text-align: right;
+  color: #ff7a7a;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.form__submit-btn {
+  margin-bottom: 1rem;
+  padding: 2rem;
+  width: 100%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  background-color: #38cc8c;
+  -webkit-box-shadow: inset 0 -0.4rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 -0.4rem 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.form__submit-btn:focus {
+  outline: none;
+  background-color: #61d6a3;
+}
+
+.form__submit-btn:hover {
+  background-color: #2eb279;
+}
+
+.form__agreement {
+  padding: 0 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+  color: #b9b6d3;
+}
+
+.form__agreement a {
+  color: #ff7a7a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.form__agreement a:hover {
+  text-decoration: underline;
+}
+
+.error input {
+  padding-right: 6.5rem;
+  margin-bottom: 0.6rem;
+  border: 2px solid #ff7a7a;
+  color: #ff7a7a;
+}
+
+.error input::-webkit-input-placeholder {
+  color: #ff7a7a;
+}
+
+.error input:-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+.error input::-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+.error input::placeholder {
+  color: #ff7a7a;
+}
+
+.error input:focus {
+  border: 2px solid #ff7a7a;
+}
+
+.error .form__error-icon {
+  opacity: 1;
+}
+
+.error .form__info {
+  margin-bottom: 1.4rem;
+  opacity: 1;
+  height: unset;
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2rem;
+    background: #ff7a7a url("../images/bg-intro-desktop.png");
+  }
+  .intro {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 111rem;
+  }
+  .intro__header {
+    margin: 0;
+    padding-right: 3rem;
+    text-align: left;
+  }
+  .intro__heading {
+    font-size: 5rem;
+  }
+  .form__content {
+    padding: 4rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
