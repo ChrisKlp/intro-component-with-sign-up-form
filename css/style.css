@@ -68,6 +68,8 @@ body {
   padding: 2.4rem;
   background: white;
   border-radius: 1rem;
+  -webkit-box-shadow: 0 0.7rem 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.7rem 0 rgba(0, 0, 0, 0.15);
 }
 
 .form__field {
@@ -243,6 +245,7 @@ body {
   }
   .intro__heading {
     font-size: 5rem;
+    line-height: 115%;
   }
   .form__content {
     padding: 4rem;

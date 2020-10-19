@@ -74,6 +74,7 @@ body {
         padding: 2.4rem;
         background: $color-white;
         border-radius: 1rem;
+        box-shadow: 0 0.7rem 0 rgba(#000, 0.15);
     }
 
     &__field {
@@ -218,6 +219,7 @@ body {
 
         &__heading {
             font-size: 5rem;
+            line-height: 115%;
         }
     }
 
